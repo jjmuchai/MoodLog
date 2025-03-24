@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodLog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MoodLog</h1>
+        <p id="selected-mood">How are you feeling today?</p>
+        <div class="mood-buttons">
+            <button onclick="logMood('Happy')">😊 Happy</button>
+            <button onclick="logMood('Sad')">😞 Sad</button>
+            <button onclick="logMood('Angry')">😡 Angry</button>
+            <button onclick="logMood('Relaxed')">😌 Relaxed</button>
+            <button onclick="logMood('Stressed')">😰 Stressed</button>
+            <button onclick="logMood('Excited')">🤩 Excited</button>
+        </div>
+        <textarea id="note" placeholder="Add a note..."></textarea>
+        <button onclick="submitMood()">Save Mood</button>
+        <h2>Mood History</h2>
+        <ul id="mood-list"></ul>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

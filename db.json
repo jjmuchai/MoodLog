@@ -1,0 +1,16 @@
+{
+  "moods": [
+    {
+      "id": 3,
+      "mood": "Relaxed",
+      "note": "am very ok today",
+      "date": "2025-03-24"
+    },
+    {
+      "id": 4,
+      "mood": "Happy",
+      "note": "am happy today",
+      "date": "2025-03-24"
+    }
+  ]
+}
