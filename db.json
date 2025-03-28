@@ -1,16 +1,34 @@
 {
   "moods": [
     {
-      "id": 3,
+      "id": "6",
       "mood": "Relaxed",
-      "note": "am very ok today",
-      "date": "2025-03-24"
+      "note": "gf",
+      "date": "2025-03-26"
     },
     {
-      "id": 4,
+      "id": "8",
       "mood": "Happy",
-      "note": "am happy today",
-      "date": "2025-03-24"
+      "note": "i am happy today",
+      "date": "2025-03-28"
+    },
+    {
+      "id": "10",
+      "mood": "Excited",
+      "note": "today",
+      "date": "2025-03-28"
+    },
+    {
+      "id": 6,
+      "mood": "Motivated",
+      "note": "am done with the project",
+      "date": "2025-03-28"
+    },
+    {
+      "id": 5,
+      "mood": "Tired",
+      "note": "what a day",
+      "date": "2025-03-28"
     }
   ]
 }

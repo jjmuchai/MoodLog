@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoodLog</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for stats -->
 </head>
 <body>
     <div class="container">
         <h1>MoodLog</h1>
+
+        <!-- Dark mode toggle -->
+        <button id="dark-mode-toggle">🌙 Toggle Dark Mode</button>
+
+        <!-- Mood selection -->
         <p id="selected-mood">How are you feeling today?</p>
         <div class="mood-buttons">
             <button onclick="logMood('Happy')">😊 Happy</button>
@@ -17,13 +23,44 @@
             <button onclick="logMood('Relaxed')">😌 Relaxed</button>
             <button onclick="logMood('Stressed')">😰 Stressed</button>
             <button onclick="logMood('Excited')">🤩 Excited</button>
+            <button onclick="logMood('Tired')">😴 Tired</button>
+            <button onclick="logMood('Motivated')">🔥 Motivated</button>
         </div>
-        <textarea id="note" placeholder="Add a note..."></textarea>
+
+        <!-- Add a note and save -->
+        <textarea id="note" placeholder="Write a note..."></textarea>
         <button onclick="submitMood()">Save Mood</button>
+
+        <!-- Search bar for filtering moods -->
+        <input type="text" id="search-bar" placeholder="Search moods..." onkeyup="searchMoods()">
+
+        <!-- Mood history section -->
         <h2>Mood History</h2>
         <ul id="mood-list"></ul>
+
+        <!-- Statistics using Chart.js -->
+        <h2>Statistics</h2>
+        <canvas id="moodChart"></canvas>
+
+        <!-- Mood streak tracking -->
+        <h2>Mood Streak</h2>
+        <p id="mood-streak">Current Streak: 0 days</p>
+
+        <!-- Leaderboard to show most frequent moods -->
+        <h2>Mood Leaderboard</h2>
+        <ul id="mood-leaderboard"></ul>
+
+        <!-- Random Mood Quote -->
+        <h2>Random Mood Quote</h2>
+        <p id="mood-quote">Click below for inspiration!</p>
+        <button onclick="generateQuote()">🔄 New Quote</button>
+
+        <!-- Mood Reminder -->
+        <h2>Set a Mood Reminder</h2>
+        <input type="time" id="reminder-time">
+        <button onclick="setReminder()">Set Reminder</button>
     </div>
-    <script src="script.js"></script>
-    
+
+    <script src="script.js"></script> <!-- External JS file -->
 </body>
 </html>
